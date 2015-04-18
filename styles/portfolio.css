@@ -1,0 +1,192 @@
+html, body {
+    background-color: #fff;
+    font-size: 18px;
+    font-family: 'Open Sans', Sans-serif;
+    margin: 0;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    max-width: 100%;
+}
+
+html, body:after {
+    overflow-x: hidden;
+}
+
+.btn-circle {
+    background: 0;
+    border-radius: 100%!important;
+    border: 2px solid #333!important;
+    font-size: 5em;
+    height: 40px;
+    margin-top: 10px;
+    width: 40px;
+}
+
+.v-align-center {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+nav a {
+    color: #333!important;
+}
+
+.navbar-custom {
+    background-color: 0;
+    padding: 10px;
+    transition: background-color 0.5s linear, padding 0.5s linear;
+    -moz-transition: background-color 0.5s linear, padding 0.5s linear;
+    -webkit-transition: background-color 0.5s linear, padding 0.5s     linear;
+}
+
+.navbar-brand {
+    background: url("../images/logo.png") no-repeat 0 50%;
+    background-size: 80px;
+    width: 80px;
+}
+
+.navbar-fixed-collapse {
+    background-color: #f3f3f3;
+    padding: 0px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.header {
+    width: 100%;
+    height: 100%;
+    display: table;
+    position: relative;
+}
+
+#cover {
+    background: url("../images/bg.png") repeat scroll center center transparent;
+    background-size: cover !important;
+}
+
+.cover-text {
+    display: table-cell;
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.cover-text h1 {
+    color: #333;
+    font-size: 65px;
+    text-transform: uppercase;
+}
+
+#genesis {
+    background-color: #f3f3f3;
+}
+
+#about {
+    height: auto;
+    padding: 80px 0px;
+}
+
+.section {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    padding: 150px 30px;
+}
+
+.section h1 {
+
+}
+
+.section h4 {
+    font-size: 18px;
+    color: #98aec8;
+}
+
+
+/* == CONTENT === */
+/* === SCREEN IMAGES === */
+.section img:last-child {
+    box-shadow:         -7px -5px 22px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    -7px -5px 22px 0px rgba(50, 50, 50, 0.5);
+    -webkit-box-shadow: -7px -5px 22px 0px rgba(50, 50, 50, 0.5);
+    transform: translateX(20%) translateY(55%);
+    transition: transform 0.7s linear;
+    width: 85%;
+    z-index: 1;
+}
+
+.section img:first-child {
+    box-shadow:         -7px -5px 22px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    -7px -5px 22px 0px rgba(50, 50, 50, 0.5);
+    -webkit-box-shadow: -7px -5px 22px 0px rgba(50, 50, 50, 0.5);
+    left: 5%;
+    position: absolute;
+    transform: translateX(-5%);
+    transition: transform 0.8s linear;
+    width: 85%;
+}
+
+.section .screens-collapse {
+    transform: translateX(-120%) translateY(0%)!important;
+}
+
+.section .text-right img:first-child {
+    box-shadow:         6px -4px 22px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    6px -4px 22px 0px rgba(50, 50, 50, 0.5);
+    -webkit-box-shadow: 6px -4px 22px 0px rgba(50, 50, 50, 0.5);
+    left: 15%;
+    transform: translateX(-5%);
+}
+
+.section .text-right img:last-child {
+    box-shadow:         6px -4px 22px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    6px -4px 22px 0px rgba(50, 50, 50, 0.5);
+    -webkit-box-shadow: 6px -4px 22px 0px rgba(50, 50, 50, 0.5);
+    transform: translateX(-20%) translateY(55%);
+}
+
+.section .text-right .screens-collapse {
+    transform: translateX(120%) translateY(0%)!important;
+}
+
+#nwrc img:last-child {
+    width: 55%;
+}
+
+#lgs img:last-child {
+    width: 35%;
+}
+/* === END SCREEN IMAGES === */
+/* == END CONTENT === */
+
+/* === FOOTER == */
+footer {
+    font-family: 'Bree Serif', serif;
+    padding: 30px 0;
+}
+/* === END FOOTER === */
+
+/* === ANIMATIONS === */
+@keyframes navbar-fixed-collapse {
+    100% { padding: 0; }
+}
+
+@-webkit-keyframes navbar-fixed-collapse {
+    100% { padding: 0;}
+}
+
+@keyframes navbar-fixed-top {
+    100% { padding: 10px 0;  background: 0;}
+}
+
+@-webkit-keyframes navbar-fixed-top {
+    100% { padding: 10px 0;}
+}
+/* === ANIMATIONS END === */

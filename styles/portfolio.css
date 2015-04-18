@@ -15,9 +15,8 @@ html, body:after {
 
 .btn-circle {
     background: 0;
-    border-radius: 100%!important;
-    border: 2px solid #333!important;
-    font-size: 5em;
+    border-radius: 100%;
+    border: 2px solid #333;
     height: 40px;
     margin-top: 10px;
     width: 40px;
@@ -35,7 +34,7 @@ nav {
 }
 
 nav a {
-    color: #333!important;
+    color: #333;
 }
 
 .navbar-custom {
@@ -50,6 +49,10 @@ nav a {
     background: url("../images/logo.png") no-repeat 0 50%;
     background-size: 80px;
     width: 80px;
+}
+
+.navbar-toggle {
+    margin: 0;
 }
 
 .navbar-fixed-collapse {
@@ -67,7 +70,7 @@ nav a {
 
 #cover {
     background: url("../images/bg.png") repeat scroll center center transparent;
-    background-size: cover !important;
+    background-size: cover;
 }
 
 .cover-text {
@@ -94,14 +97,9 @@ nav a {
 }
 
 .section {
-    height: 100%;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     padding: 150px 30px;
-}
-
-.section h1 {
-
 }
 
 .section h4 {
@@ -112,6 +110,13 @@ nav a {
 
 /* == CONTENT === */
 /* === SCREEN IMAGES === */
+.section .screens {
+    min-height: 500px;
+}
+.section .screens-collapse {
+    transform: translateX(-120%) translateY(0%)!important;
+}
+
 .section img:last-child {
     box-shadow:         -7px -5px 22px 0px rgba(50, 50, 50, 0.5);
     -moz-box-shadow:    -7px -5px 22px 0px rgba(50, 50, 50, 0.5);
@@ -131,10 +136,6 @@ nav a {
     transform: translateX(-5%);
     transition: transform 0.8s linear;
     width: 85%;
-}
-
-.section .screens-collapse {
-    transform: translateX(-120%) translateY(0%)!important;
 }
 
 .section .text-right img:first-child {
@@ -172,6 +173,14 @@ footer {
     padding: 30px 0;
 }
 /* === END FOOTER === */
+
+/* === MEDIA RULES === */
+@media (min-width: 1500px) {
+    .container {
+        width: 1570px;
+    }
+}
+/* === END MEDIA RULES === */
 
 /* === ANIMATIONS === */
 @keyframes navbar-fixed-collapse {

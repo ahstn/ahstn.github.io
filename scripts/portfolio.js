@@ -9,16 +9,17 @@ $(window).scroll( function(){
     }
 
     // Reveal Screen Images after scrolling
-
     $('.section img').each( function(i) {
         var imgY = $(this).offset().top + $(this).outerHeight();
         var windowY = $(window).scrollTop() + $(window).height();
         if (windowY > imgY) {
             $(this).removeClass("screens-collapse");
         }
-        else {
-            $(this).addClass("screens-collapse");
-        }
     });
 
+});
+
+// Closes the Responsive Menu on Menu Item Click
+$('.navbar-collapse ul li a').click(function() {
+    $('.navbar-toggle:visible').click();
 });

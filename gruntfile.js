@@ -62,5 +62,5 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.registerTask('build', ['concat', 'less']);
-    grunt.registerTask('default', ['concat', 'less', 'browserSync', 'watch']);
+    grunt.registerTask('default', ['concat', 'less', 'watch']);
 };

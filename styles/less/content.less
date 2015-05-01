@@ -1,0 +1,61 @@
+/*==========================================
+    Content Pages
+==========================================*/
+
+#page-header {
+    font-family: "Bree Serif",serif;
+    font-size: 42px;
+}
+
+aside {
+    padding: 40px 0;
+}
+
+.header .screens {
+    min-height: 500px;
+
+    img:first-child {
+        -webkit-box-shadow: -7px -5px 22px 0px rgba(50, 50, 50, 0.5);
+        -moz-box-shadow:    -7px -5px 22px 0px rgba(50, 50, 50, 0.5);
+        box-shadow:         -7px -5px 22px 0px rgba(50, 50, 50, 0.5);
+        width: 100%;
+    }
+    img:last-child {
+        -webkit-box-shadow: -7px -5px 22px 0px rgba(50, 50, 50, 0.5);
+        -moz-box-shadow:    -7px -5px 22px 0px rgba(50, 50, 50, 0.5);
+        box-shadow:         -7px -5px 22px 0px rgba(50, 50, 50, 0.5);
+        width: 70%;
+    }
+}
+
+#screenshots {
+    .photo-box {
+        display: block;
+        margin: 0 auto;
+        max-width: 650px;
+        position: relative;
+    }
+
+    .photo-box-caption {
+        background: none repeat scroll 0% 0% @primary;
+        bottom: 0;
+        color: white;
+        display: block;
+        height: 100%;
+        opacity: 0;
+        position: absolute;
+        transition: all 0.5s ease 0s;
+        vertical-align: middle;
+        width: 100%;
+    }
+
+    .photo-box-caption:hover,
+    .photo-box-caption:focus {
+        opacity: 0.9;
+    }
+
+    .no-spacing > [class *= "col-"] {
+        padding: 0;
+        margin: 0;
+    }
+}

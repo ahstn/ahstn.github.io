@@ -1,0 +1,274 @@
+/*
+ * Personal Portfolio
+ *
+ * @author: Adam Houston
+ * @github: github.com/phazyy
+ *
+*/
+
+/*==========================================
+    Variables
+==========================================*/
+
+@primary: #2886f2;
+@primary-light: lighten(@primary, 15%);
+@primary-dark: darken(@primary, 5%);
+
+@secondary: spin(@primary, 180);
+@secondary-light: lighten(@secondary, 15%);
+@secondary-dark: darken(@secondary, 5%);
+
+@sidebar: #2E3A4E;
+@sidebar-light: lighten(@sidebar, 15%);
+@sidebar-dark: darken(@sidebar, 5%);
+
+/*==========================================
+    General
+==========================================*/
+html, body {
+    background-color: #fff;
+    font-size: 18px;
+    font-family: 'Open Sans', Sans-serif;
+    margin: 0;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    max-width: 100%;
+}
+
+html, body:after {
+    overflow-x: hidden;
+}
+
+.btn-circle {
+    background: 0;
+    border-radius: 100%;
+    border: 2px solid #333;
+    height: 40px;
+    margin-top: 10px;
+    width: 40px;
+}
+
+.v-align-center {
+    display: flex;
+    align-items: center;
+}
+
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    background: url(../images/preloader.gif) center no-repeat #fff;
+}
+
+/*==========================================
+    Navigation
+==========================================*/
+nav {
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+    text-transform: uppercase;
+
+    a {
+        color: #333;
+    }
+}
+
+.navbar-custom {
+    background-color: 0;
+    padding: 10px;
+    transition: background-color 0.5s linear, padding 0.5s linear;
+    -moz-transition: background-color 0.5s linear, padding 0.5s linear;
+    -webkit-transition: background-color 0.5s linear, padding 0.5s     linear;
+}
+
+.navbar-brand {
+    background: url("../images/logo.png") no-repeat 0 50%;
+    background-size: 80px;
+    width: 80px;
+}
+
+.navbar-toggle {
+    margin: 0;
+}
+
+.navbar-fixed-collapse {
+    background-color: #f3f3f3;
+    padding: 0px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+/*==========================================
+    Sections
+==========================================*/
+.cover {
+    width: 100%;
+    height: 100%;
+    display: table;
+    position: relative;
+}
+
+#cover {
+    background: url("../images/bg.png") repeat scroll center center transparent;
+    background-size: cover;
+}
+
+.cover-text {
+    display: table-cell;
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+
+    h1 {
+        color: #333;
+        font-size: 65px;
+        text-transform: uppercase;
+    }
+}
+
+#genesis {
+    background-color: #f3f3f3;
+}
+
+#about {
+    height: auto;
+    padding: 80px 0px;
+}
+
+.section {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    padding: 80px 30px;
+
+    h4 {
+        font-size: 18px;
+        color: #98aec8;
+    }
+
+    .screens {
+        min-height: 500px;
+    }
+
+    .screens-collapse {
+        opacity: 0;
+        transform: translateX(-30%) translateY(0%)!important;
+    }
+
+    img {
+        box-shadow:         -7px -5px 22px 0px rgba(50, 50, 50, 0.5);
+        -moz-box-shadow:    -7px -5px 22px 0px rgba(50, 50, 50, 0.5);
+        -webkit-box-shadow: -7px -5px 22px 0px rgba(50, 50, 50, 0.5);
+        position: static;
+        display: block;
+        max-width: 2000px;
+        opacity: 1;
+        transform: translateX(0);
+        transition: transform 0.5s linear, opacity 0.5s ease-in;
+        float: right;
+    }
+
+    .text-right img {
+        box-shadow:         6px -4px 22px 0px rgba(50, 50, 50, 0.5);
+        -moz-box-shadow:    6px -4px 22px 0px rgba(50, 50, 50, 0.5);
+        -webkit-box-shadow: 6px -4px 22px 0px rgba(50, 50, 50, 0.5);
+        left: 15%;
+        float: left;
+    }
+
+    .text-right .screens-collapse {
+        transform: translateX(30%) translateY(0%)!important;
+    }
+}
+
+@media (max-width: 768px) {
+    .screens img {
+        max-width: 100%;
+        margin: 20px auto;
+        float: none;
+    }
+}
+
+/*==========================================
+    Footer
+==========================================*/
+footer {
+    font-family: 'Bree Serif', serif;
+    padding: 30px 0;
+}
+/*==========================================
+    Content Pages
+==========================================*/
+
+#page-header {
+    font-family: "Bree Serif",serif;
+    font-size: 42px;
+}
+
+aside {
+    padding: 40px 0;
+}
+
+.header .screens {
+    min-height: 500px;
+
+    img:first-child {
+        -webkit-box-shadow: -7px -5px 22px 0px rgba(50, 50, 50, 0.5);
+        -moz-box-shadow:    -7px -5px 22px 0px rgba(50, 50, 50, 0.5);
+        box-shadow:         -7px -5px 22px 0px rgba(50, 50, 50, 0.5);
+        width: 100%;
+    }
+    img:last-child {
+        -webkit-box-shadow: -7px -5px 22px 0px rgba(50, 50, 50, 0.5);
+        -moz-box-shadow:    -7px -5px 22px 0px rgba(50, 50, 50, 0.5);
+        box-shadow:         -7px -5px 22px 0px rgba(50, 50, 50, 0.5);
+        width: 70%;
+    }
+}
+
+#screenshots {
+    .photo-box {
+        display: block;
+        margin: 0 auto;
+        max-width: 650px;
+        position: relative;
+    }
+
+    .photo-box-caption {
+        background: none repeat scroll 0% 0% @primary;
+        bottom: 0;
+        color: white;
+        display: block;
+        height: 100%;
+        opacity: 0;
+        position: absolute;
+        transition: all 0.5s ease 0s;
+        vertical-align: middle;
+        width: 100%;
+    }
+
+    .photo-box-caption:hover,
+    .photo-box-caption:focus {
+        opacity: 0.9;
+    }
+
+    .no-spacing > [class *= "col-"] {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+/*==========================================
+    Shortcut / Helper Classes
+==========================================*/
+
+.text-white {
+    color: white;
+}
+
+.bg-dark {
+    background: none repeat scroll 0% 0% #202020;
+}

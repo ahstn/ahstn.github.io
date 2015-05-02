@@ -13,18 +13,17 @@ aside {
 
 .header .screens {
     min-height: 500px;
+    padding: 40px 0;
+
+    img {
+        position: absolute;
+    }
 
     img:first-child {
         -webkit-box-shadow: -7px -5px 22px 0px rgba(50, 50, 50, 0.5);
         -moz-box-shadow:    -7px -5px 22px 0px rgba(50, 50, 50, 0.5);
         box-shadow:         -7px -5px 22px 0px rgba(50, 50, 50, 0.5);
-        width: 100%;
-    }
-    img:last-child {
-        -webkit-box-shadow: -7px -5px 22px 0px rgba(50, 50, 50, 0.5);
-        -moz-box-shadow:    -7px -5px 22px 0px rgba(50, 50, 50, 0.5);
-        box-shadow:         -7px -5px 22px 0px rgba(50, 50, 50, 0.5);
-        width: 70%;
+        max-width: 720px;
     }
 }
 
@@ -34,6 +33,13 @@ aside {
         margin: 0 auto;
         max-width: 650px;
         position: relative;
+        overflow: hidden;
+
+        img {
+            height: 313px;
+            width: auto;
+            max-height: 313px;
+        }
     }
 
     .photo-box-caption {
@@ -52,6 +58,13 @@ aside {
     .photo-box-caption:hover,
     .photo-box-caption:focus {
         opacity: 0.9;
+    }
+
+    .photo-box-caption-text {
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-70%);
+        transform: translateY(-70%);
     }
 
     .no-spacing > [class *= "col-"] {

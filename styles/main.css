@@ -174,24 +174,28 @@ aside {
 }
 .header .screens {
   min-height: 500px;
+  padding: 40px 0;
+}
+.header .screens img {
+  position: absolute;
 }
 .header .screens img:first-child {
   -webkit-box-shadow: -7px -5px 22px 0px rgba(50, 50, 50, 0.5);
   -moz-box-shadow: -7px -5px 22px 0px rgba(50, 50, 50, 0.5);
   box-shadow: -7px -5px 22px 0px rgba(50, 50, 50, 0.5);
-  width: 100%;
-}
-.header .screens img:last-child {
-  -webkit-box-shadow: -7px -5px 22px 0px rgba(50, 50, 50, 0.5);
-  -moz-box-shadow: -7px -5px 22px 0px rgba(50, 50, 50, 0.5);
-  box-shadow: -7px -5px 22px 0px rgba(50, 50, 50, 0.5);
-  width: 70%;
+  max-width: 720px;
 }
 #screenshots .photo-box {
   display: block;
   margin: 0 auto;
   max-width: 650px;
   position: relative;
+  overflow: hidden;
+}
+#screenshots .photo-box img {
+  height: 313px;
+  width: auto;
+  max-height: 313px;
 }
 #screenshots .photo-box-caption {
   background: none repeat scroll 0% 0% #2886f2;
@@ -208,6 +212,12 @@ aside {
 #screenshots .photo-box-caption:hover,
 #screenshots .photo-box-caption:focus {
   opacity: 0.9;
+}
+#screenshots .photo-box-caption-text {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-70%);
+  transform: translateY(-70%);
 }
 #screenshots .no-spacing > [class*="col-"] {
   padding: 0;

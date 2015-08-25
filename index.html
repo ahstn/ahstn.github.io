@@ -1,230 +1,217 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>AH | Portfolio</title>
+<head>
+  <title>Portfolio</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+  <link href="http://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <!-- Preloader with no JS support -->
+  <noscript><style type="text/css">.preloader { display: none; }</style></noscript>
+  <script>
+  $(window).load( function() {
+    $('.preloader').fadeOut("slow");
+  });
+  </script>
 
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-        <link rel="stylesheet" href="styles/main.css">
-        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
-        <link href="http://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+</head>
+<body>
+  <div class="preloader" id="preloader"></div>
+  <nav class="nav navbar-custom navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse"
+        data-target=".navbar-collapse">
+          <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand" href="#"></a>
+      </div>
+      <div class="collapse navbar-collapse navbar-right">
+        <ul class="nav navbar-nav">
+          <li><a href="#cover">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#genesis">work</a></li>
+          <li><a href="#about">contact</a></li>
+          <li><a href="">download resume</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header id="cover" class="cover">
+    <div class="cover-text fade-in">
+      <h1>Adam Houston</h1>
+      <h2>Software and Web Developer</h2>
+      <button class="btn btn-circle" href="genesis">
+        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
 
-        <!-- Preloader with no JS support -->
-        <script src="node_modules/jquery/dist/jquery.js"></script>
-        <noscript><style type="text/css">.preloader { display: none; }</style></noscript>
-        <script>
-            $(window).load( function() {
-                $('.preloader').fadeOut("slow");
-            });
-        </script>
+  <section id="genesis" class="section">
+    <div class="row">
+      <div class="container">
+        <div class="col-lg-6 col-md-12 clearfix screens">
+          <img src="images/genesis/Orders.png" alt="Orders Screen"
+          class="screens-collapse">
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <h1>Genesis Distributions</h1>
+          <h4>Technologies Used: C# (WPF), SQL and Adobe Photoshop</h4>
+          <p>
+            A accounting and business management tool that I developed as part of
+            a two man team. Our intentions were to make the employees' working
+            lifes at Genesis Distributions easier and more efficient. I personally
+            handled the Customer and Repairs side of the program and business, which
+            you can see in more detail on the project page.
+          </p>
+          <p>
+            The features that I implemented were adding, deleting,
+            displaying and updating customers, their orders and repairs,
+            with various searching and filtering methods when
+            displaying the data. I also included two reporting methods
+            to give the owner easy access to collections of data he
+            could print.
+          </p>
+          <a class="btn btn-primary" href="pages/genesis.html">
+            Learn More
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    </head>
-    <body>
-        <div class="preloader" id="preloader"></div>
-        <nav class="nav navbar-custom navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse"
-                        data-target=".navbar-collapse">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                    <a class="navbar-brand" href="#"></a>
-                </div>
-                <div class="collapse navbar-collapse navbar-right">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#cover">home</a></li>
-                        <li><a href="#about">about</a></li>
-                        <li><a href="#genesis">work</a></li>
-                        <li><a href="#about">contact</a></li>
-                        <li><a href="">download resume</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <header id="cover" class="cover">
-            <div class="cover-text fade-in">
-                <h1>Adam Houston</h1>
-                <h2>Software and Web Developer</h2>
-                <button class="btn btn-circle" href="genesis">
-                    <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-                </button>
-            </div>
-        </header>
+  <section id="nwrc" class="section">
+    <div class="row">
+      <div class="container">
+        <div class="col-lg-6 text-right">
+          <h1>NWRC Staff Tools</h1>
+          <h4>
+            Technologies Used: ASP.NET, SQL, HTML, LESS and JavaScript
+          </h4>
+          <p>
+            Various online tools that I developed during my time working at the
+            North West Regional College in Belfast. The work I completed ranges
+            from dashboards indended to track various projects and official
+            meetings to online applications for displaying numerous different
+            statistics and reports.
+          </p>
+          <p>
+            Working as a Microsoft full stack developer, I frequently used all the
+            technologies mentioned above as well as some others in a Windows
+            environment.
+          </p>
+          <button class="btn btn-primary">
+            Learn More
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </button>
+        </div>
+        <div class="col-lg-6 clearfix screens text-right">
+          <img src="images/nucleus-nwrc/add-resized.png" alt="Adding a Project"
+          class="screens-collapse">
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <section id="genesis" class="section">
-            <div class="row">
-                <div class="container">
-                    <div class="col-lg-6 col-md-12 clearfix screens">
-                        <img src="images/genesis/Orders.png" alt="Orders Screen"
-                            class="screens-collapse">
-                    </div>
-                    <div class="col-lg-6 col-md-12">
-                        <h1>Genesis Distributions | Business Software</h1>
-                        <h4>Technologies Used: C#, WPF and SQL</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Morbi luctus volutpat urna. Quisque at sem eget ipsum
-                            egestas volutpat eu eu ipsum. Integer a est quis nibh
-                            pretium malesuada. Etiam condimentum ut ipsum id sodales.
-                            Donec scelerisque placerat lorem sit amet scelerisque.
-                            Ut id ipsum bibendum, lacinia libero malesuada, malesuada odio.
-                            Praesent sed efficitur nibh. Morbi id eros risus.
-                            Cras nec condimentum lectus, non fermentum turpis.
-                            Ut quis purus dolor. Pellentesque tortor orci, commodo
-                            in mauris non, eleifend dignissim urna. Aenean dui arcu,
-                            iaculis vitae sagittis quis, facilisis quis nibh. Etiam
-                            condimentum varius luctus. Nunc eget ante eu libero
-                            vehicula iaculis in vel sem. Phasellus lacinia egestas
-                            lorem nec tristique.
-                        </p>
-                        <button class="btn btn-primary">
-                            Learn More
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <section id="lgs" class="section bg-info">
+    <div class="row">
+      <div class="container">
+        <div class="col-lg-6 clearfix screens">
+          <img src="images/lgs/graph parabola.png" alt="Graphing Screen"
+          class="screens-collapse">
+        </div>
+        <div class="col-lg-6">
+          <h1>LGSGrapher</h1>
+          <h4>Technologies Used: C#, WinForms and SQL</h4>
+          <p>
+            A simple mathematical program that I wrote for my A-Level coursework.
+            Designed to help other students when studying the various transformations
+            of graphs, it allowed authorised A-Level maths pupils to input an
+            equation which would then be calculated and plotted (as shown). If
+            desired, they could then apply a range of transformations to the graph
+            having the new equation displayed for them while keeping the old equation.
+          </p>
+          <button class="btn btn-primary">
+            Learn More
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <section id="nwrc" class="section">
-            <div class="row">
-                <div class="container">
-                    <div class="col-lg-6 text-right">
-                        <h1>Staff Tools | NWRC Online Tools</h1>
-                        <h4>Technologies Used: ASP.NET, C#, SQL, HTML, CSS and JavaScript</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Morbi luctus volutpat urna. Quisque at sem eget ipsum
-                            egestas volutpat eu eu ipsum. Integer a est quis nibh
-                            pretium malesuada. Etiam condimentum ut ipsum id sodales.
-                            Donec scelerisque placerat lorem sit amet scelerisque.
-                            Ut id ipsum bibendum, lacinia libero malesuada, malesuada odio.
-                            Praesent sed efficitur nibh. Morbi id eros risus.
-                            Cras nec condimentum lectus, non fermentum turpis.
-                            Ut quis purus dolor. Pellentesque tortor orci, commodo
-                            in mauris non, eleifend dignissim urna. Aenean dui arcu,
-                            iaculis vitae sagittis quis, facilisis quis nibh. Etiam
-                            condimentum varius luctus. Nunc eget ante eu libero
-                            vehicula iaculis in vel sem. Phasellus lacinia egestas
-                            lorem nec tristique.
-                        </p>
-                        <button class="btn btn-primary">
-                            Learn More
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                        </button>
-                    </div>
-                    <div class="col-lg-6 clearfix screens text-right">
-                            <img src="images/nucleus-nwrc/add-resized.png" alt="Adding a Project"
-                            class="screens-collapse">
-                    </div>
-                </div>
-            </div>
-        </section>
+  <section id="about" class="section bg-primary">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-sm-6 text-center">
+          <i class="fa fa-4x fa-code"></i>
+          <h3>Web Development</h3>
+          <p class="text-class">
+            Primarily back-end work which started with developing
+            ASP.NET C# but I have plans to branch onto Node.js
+            and the MEAN stack.
+          </p>
+        </div>
+        <div class="col-lg-3 col-sm-6 text-center">
+          <i class="fa fa-4x fa-connectdevelop"></i>
+          <h3>Software Development</h3>
+          <p class="text-class">
+            Focused mainly on C# with WPF, but also have a decent
+            knowledge of Java and previous experiences with C++.
+          </p>
+        </div>
+        <div class="col-lg-3 col-sm-6 text-center">
+          <i class="fa fa-4x fa-paper-plane"></i>
+          <h3>Releases</h3>
+          <p class="text-class">
+            I also have experience in deloying solutions for real
+            life industry use. Using both web servers and native
+            software.
+          </p>
+        </div>
+        <div class="col-lg-3 col-sm-6 text-center">
+          <i class="fa fa-4x fa-git"></i>
+          <h3>Source Control</h3>
+          <p class="text-class">
+            I mainly use Git for all my verison control and group
+            work needs, but I've also dabbed into Microsoft's Team
+            Foundation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <section id="lgs" class="section bg-info">
-            <div class="row">
-                <div class="container">
-                    <div class="col-lg-6 clearfix screens">
-                        <img src="images/lgs/graph parabola.png" alt="Graphing Screen"
-                            class="screens-collapse">
-                    </div>
-                    <div class="col-lg-6">
-                        <h1>LGSGrapher | Mathematical Graphing Tool</h1>
-                        <h4>Technologies Used: C#, WinForms and SQL</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Morbi luctus volutpat urna. Quisque at sem eget ipsum
-                            egestas volutpat eu eu ipsum. Integer a est quis nibh
-                            pretium malesuada. Etiam condimentum ut ipsum id sodales.
-                            Donec scelerisque placerat lorem sit amet scelerisque.
-                            Ut id ipsum bibendum, lacinia libero malesuada, malesuada odio.
-                            Praesent sed efficitur nibh. Morbi id eros risus.
-                            Cras nec condimentum lectus, non fermentum turpis.
-                            Ut quis purus dolor. Pellentesque tortor orci, commodo
-                            in mauris non, eleifend dignissim urna. Aenean dui arcu,
-                            iaculis vitae sagittis quis, facilisis quis nibh. Etiam
-                            condimentum varius luctus. Nunc eget ante eu libero
-                            vehicula iaculis in vel sem. Phasellus lacinia egestas
-                            lorem nec tristique.
-                        </p>
-                        <button class="btn btn-primary">
-                            Learn More
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="section bg-primary">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-sm-6 text-center">
-                        <i class="fa fa-4x fa-code"></i>
-                        <h3>Web Development</h3>
-                        <p class="text-class">
-                            Primarily back-end work which started with developing
-                            ASP.NET C# but I have plans to branch onto Node.js
-                            and the MEAN stack.
-                        </p>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 text-center">
-                        <i class="fa fa-4x fa-connectdevelop"></i>
-                        <h3>Software Development</h3>
-                        <p class="text-class">
-                            Focused mainly on C# with WPF, but also have a decent
-                            knowledge of Java and previous experiences with C++.
-                        </p>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 text-center">
-                        <i class="fa fa-4x fa-paper-plane"></i>
-                        <h3>Releases</h3>
-                        <p class="text-class">
-                            I also have experience in deloying solutions for real
-                            life industry use. Using both web servers and native
-                            software.
-                        </p>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 text-center">
-                        <i class="fa fa-4x fa-git"></i>
-                        <h3>Source Control</h3>
-                        <p class="text-class">
-                            I mainly use Git for all my verison control and group
-                            work needs, but I've also dabbed into Microsoft's Team
-                            Foundation.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <footer class="bg-dark">
-            <div class="container text-center text-white">
-                <h4>Adam Houston</h4>
-                <ul class="list-unstyled">
-                    <li>
-                        <span class="glyphicon glyphicon-phone"></span>
-                        &nbsp; 07812122121
-                    </li>
-                    <li>
-                        <span class="glyphicon glyphicon-envelope"></span>
-                        &nbsp; AdamHouston_@live.co.uk
-                    </li>
-                    <li>
-                        <span class="glyphicon glyphicon-home"></span>
-                        &nbsp; Belfast, Northern Ireland
-                    </li>
-                </ul>
-                <ul class="list-inline">
-                    <li>
-                        <i class="fa fa-4x fa-github"></i>
-                        <i class="fa fa-4x fa-linkedin"></i>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-        <script src="scripts/portfolio.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    </body>
+  <footer class="bg-dark">
+    <div class="container text-center text-white">
+      <h4>Adam Houston</h4>
+      <ul class="list-unstyled">
+        <li>
+          <span class="glyphicon glyphicon-phone"></span>
+          &nbsp; 07812122121
+        </li>
+        <li>
+          <span class="glyphicon glyphicon-envelope"></span>
+          &nbsp; AdamHouston_@live.co.uk
+        </li>
+        <li>
+          <span class="glyphicon glyphicon-home"></span>
+          &nbsp; Belfast, Northern Ireland
+        </li>
+      </ul>
+      <ul class="list-inline">
+        <li>
+          <i class="fa fa-4x fa-github"></i>
+          <i class="fa fa-4x fa-linkedin"></i>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="scripts/portfolio.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
 </html>

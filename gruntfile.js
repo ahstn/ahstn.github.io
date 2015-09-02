@@ -45,8 +45,24 @@ module.exports = function (grunt) {
                         flatten: true,
                         filter : 'isFile',
 
+                        src: ['node_modules/bootstrap/dist/fonts/**'],
+                        dest: 'styles/fonts/'
+                    },
+                    {
+                        expand : true,
+                        flatten: true,
+                        filter : 'isFile',
+
                         src: ['node_modules/font-awesome/css/**'],
                         dest: 'styles/font-awesome/'
+                    },
+                    {
+                        expand : true,
+                        flatten: true,
+                        filter : 'isFile',
+
+                        src: ['node_modules/font-awesome/fonts/**'],
+                        dest: 'styles/fonts/'
                     },
                     {
                         expand : true,

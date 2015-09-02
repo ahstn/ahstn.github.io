@@ -1,5 +1,9 @@
 {
   "name": "Portfolio",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/phazyy/phazyy.github.io.git"
+  },
   "version": "1.0.0",
   "description": "Personal Portfolio",
   "main": "index.js",
@@ -14,7 +18,8 @@
     "less": "^2.5.0"
   },
   "devDependencies": {
-    "grunt-contrib-copy": "^0.8.1"
+    "grunt-contrib-copy": "^0.8.1",
+    "grunt-contrib-imagemin": "^0.9.4"
   },
   "scripts": {
     "test": "test"

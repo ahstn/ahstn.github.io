@@ -5,21 +5,6 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        browserSync: {
-            bsFiles: {
-                src: [
-                    'pages/*.html',
-                    'styles/*.css',
-                    'styles/less/*.less'
-                ],
-            },
-            options: {
-                watchTask: true,
-                server: {
-                    baseDir: "./"
-                }
-            }
-        },
         concat: {
             files: {
                 src: [
@@ -32,7 +17,6 @@ module.exports = function (grunt) {
                 nonull: true
             }
         },
-
         less: {
             development: {
                 options: {
@@ -45,7 +29,36 @@ module.exports = function (grunt) {
                 }
             }
         },
+        copy: {
+            main: {
+                files: [
+                    {
+                        expand : true,
+                        flatten: true,
+                        filter : 'isFile',
 
+                        src: ['node_modules/bootstrap/dist/css/**'],
+                        dest: 'styles/bootstrap/'
+                    },
+                    {
+                        expand : true,
+                        flatten: true,
+                        filter : 'isFile',
+
+                        src: ['node_modules/font-awesome/css/**'],
+                        dest: 'styles/font-awesome/'
+                    },
+                    {
+                        expand : true,
+                        flatten: true,
+                        filter : 'isFile',
+
+                        src: ['node_modules/jquery/dist/**'],
+                        dest: 'scripts/jquery/'
+                    }
+                ],
+            },
+        },
         watch: {
             styles: {
                 files: ['styles/less/*.less'],
@@ -57,10 +70,10 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.loadNpmTasks('grunt-browser-sync');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.registerTask('build', ['concat', 'less']);
-    grunt.registerTask('default', ['concat', 'less', 'watch']);
+    grunt.registerTask('default', ['concat', 'less', 'copy']);
 };

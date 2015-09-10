@@ -183,6 +183,9 @@ nav.navbar-custom {
   -webkit-transition: background-color 0.5s linear;
 }
 @media (max-width: 768px) {
+  nav {
+    padding: 7px 0;
+  }
   nav .navbar-collapse.navbar-right {
     border: none;
     color: #212121;

@@ -34,15 +34,27 @@ body:after {
   padding: 0 20px;
   text-transform: uppercase;
 }
-.btn-circle {
+.btn-circle,
+.btn-circle-lrg {
   border: none;
   border-radius: 100%;
   height: 50px;
   margin-top: 10px;
   width: 50px;
 }
-.btn-circle span.glyphicon {
+.btn-circle span.glyphicon,
+.btn-circle-lrg span.glyphicon {
   line-height: 45px;
+}
+.btn-circle-lrg {
+  height: 75px;
+  width: 75px;
+}
+.btn-circle-lrg span.glyphicon {
+  font-size: 32px;
+}
+.btn-circle-lrg i.fa {
+  font-size: 32px;
 }
 .btn,
 .btn-circle {
@@ -66,6 +78,11 @@ body:after {
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   height: 100%;
+}
+@media (max-width: 768px) {
+  .card {
+    margin: 10px 0;
+  }
 }
 .card img {
   border-top-left-radius: 5px;
@@ -122,24 +139,106 @@ nav .navbar-nav li a:hover {
   color: white;
   background-color: rgba(255, 255, 255, 0.1);
 }
-.navbar-custom {
-  background-color: 0;
-  transition: background-color 0.5s linear;
-  -moz-transition: background-color 0.5s linear;
-  -webkit-transition: background-color 0.5s linear;
-}
-.navbar-brand {
+nav .navbar-brand {
   background: url("../images/logo.png") no-repeat 0 50%;
   background-size: 80px;
   margin: 5px 0;
   width: 80px;
 }
-.navbar-toggle {
-  margin: 0;
+nav .navbar-toggle {
+  color: white;
+  float: left;
+  margin: 5px 15px;
 }
-.navbar-fixed-collapse {
+nav .navbar-title {
+  color: white;
+  margin: 10px 20px;
+  width: 400px;
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  nav .navbar-title {
+    display: none;
+  }
+}
+nav .navbar-title h1 {
+  font-size: 20px;
+  margin: 0;
+  text-transform: capitalize;
+}
+nav .navbar-title h2 {
+  font-size: 15px;
+  margin: 0;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+nav.navbar-fixed-collapse {
   background-color: #221c36;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+nav.navbar-custom {
+  background-color: 0;
+  transition: background-color 0.5s linear;
+  -moz-transition: background-color 0.5s linear;
+  -webkit-transition: background-color 0.5s linear;
+}
+@media (max-width: 768px) {
+  nav .navbar-collapse.navbar-right {
+    border: none;
+    color: #212121;
+    background-color: white;
+    font-weight: 400;
+    padding: 0;
+    height: 100vh;
+    max-height: 100vh;
+    width: 80%;
+  }
+  nav .navbar-collapse.navbar-right .navbar-nav {
+    margin: 7.5px 0;
+  }
+  nav .navbar-collapse.navbar-right .img-header {
+    background: url("../images/3840x2160.jpg") repeat scroll center center transparent;
+    background-size: cover;
+    color: white;
+    height: 220px;
+    padding: 25px;
+    text-transform: capitalize;
+    width: 100%;
+  }
+  nav .navbar-collapse.navbar-right .img-header h1 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 25px;
+  }
+  nav .navbar-collapse.navbar-right .img-header h2 {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0;
+  }
+  nav .navbar-collapse.navbar-right ul li a {
+    color: #212121;
+    font-size: 30px;
+    text-transform: none;
+  }
+  nav .navbar-collapse.navbar-right ul li a i {
+    color: #616161;
+    padding-left: 20px;
+    padding-right: 60px;
+  }
+  nav .navbar-collapse.navbar-right ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  nav .navbar-collapse.navbar-right ul li:last-of-type a {
+    border-bottom: 1px solid #b1b1b1;
+  }
+}
+@media (min-width: 768px) {
+  nav .img-header {
+    display: none;
+  }
+  nav ul li a i {
+    display: none!important;
+  }
 }
 /*==========================================
     Sections

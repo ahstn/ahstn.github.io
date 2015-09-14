@@ -12,7 +12,8 @@ module.exports = function (grunt) {
                     'styles/less/home.less',
                     'styles/less/content.less',
                     'styles/less/shortcuts.less',
-                    'styles/less/theme.less'
+                    'styles/less/theme.less',
+                    'styles/less/mixins.less'
                 ],
                 dest: "styles/less/main.less",
                 nonull: true

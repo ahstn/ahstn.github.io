@@ -46,6 +46,14 @@ module.exports = function (grunt) {
                         flatten: true,
                         filter : 'isFile',
 
+                        src: ['node_modules/bootstrap/dist/js/**'],
+                        dest: 'scripts/bootstrap/'
+                    },
+                    {
+                        expand : true,
+                        flatten: true,
+                        filter : 'isFile',
+
                         src: ['node_modules/bootstrap/dist/fonts/**'],
                         dest: 'styles/fonts/'
                     },

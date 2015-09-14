@@ -79,7 +79,7 @@ body:after {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   height: 100%;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .card {
     margin: 10px 0;
   }
@@ -153,10 +153,10 @@ nav .navbar-toggle {
 nav .navbar-title {
   color: white;
   margin: 10px 20px;
-  width: 400px;
+  width: 200px;
   display: inline-block;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   nav .navbar-title {
     display: none;
   }
@@ -182,19 +182,24 @@ nav.navbar-custom {
   -moz-transition: background-color 0.5s linear;
   -webkit-transition: background-color 0.5s linear;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   nav {
     padding: 7px 0;
+    background-color: #221c36;
   }
   nav .navbar-collapse.navbar-right {
     border: none;
     color: #212121;
     background-color: white;
+    box-shadow: 500px 0px 0px 0px rgba(0, 0, 0, 0.5);
     font-weight: 400;
-    padding: 0;
-    height: 100vh;
+    height: 100vh!important;
+    left: 0;
     max-height: 100vh;
-    width: 80%;
+    padding: 0;
+    position: absolute;
+    top: 74px;
+    width: 500px;
   }
   nav .navbar-collapse.navbar-right .navbar-nav {
     margin: 7.5px 0;
@@ -218,6 +223,9 @@ nav.navbar-custom {
     font-weight: 400;
     margin: 0;
   }
+  nav .navbar-collapse.navbar-right ul {
+    width: 100%;
+  }
   nav .navbar-collapse.navbar-right ul li a {
     color: #212121;
     font-size: 30px;
@@ -234,8 +242,33 @@ nav.navbar-custom {
   nav .navbar-collapse.navbar-right ul li:last-of-type a {
     border-bottom: 1px solid #b1b1b1;
   }
+  nav .container {
+    padding: 0;
+    margin: 0;
+  }
+  nav .navbar-header {
+    float: none;
+  }
+  nav .navbar-toggle {
+    display: block;
+  }
+  nav .navbar-collapse.collapse {
+    display: none!important;
+  }
+  nav .navbar-nav > li {
+    float: none;
+  }
+  nav .navbar-text {
+    float: none;
+  }
+  nav .navbar-collapse.collapse.in {
+    display: block!important;
+  }
+  nav .collapsing {
+    overflow: hidden!important;
+  }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   nav .img-header {
     display: none;
   }

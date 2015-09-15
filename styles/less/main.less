@@ -76,6 +76,15 @@ html, body:after {
     overflow-x: hidden;
 }
 
+.btn, .btn-circle, .btn-circle-lrg {
+    transition: 200ms cubic-bezier(0.4, 0, 1, 1);
+
+    &:hover {
+        .shadow-hover();
+        transform: translateY(-3px);
+    }
+}
+
 .btn {
     border: none;
     border-radius: 0.2rem;
@@ -574,6 +583,59 @@ section#screenshots {
 }
 
 /*==========================================
+    Animations
+==========================================*/
+#cover {
+    .card, h1, h2 {
+        -webkit-animation: animate-fade-up 0.8s cubic-bezier(0.7, 0, 0, 0.99) both;
+        animation: animate-fade-up 0.8s cubic-bezier(0.7, 0, 0, 0.99) both;
+    }
+    .btn-circle {
+        -webkit-animation: animate-fade-in 0.8s cubic-bezier(0.7, 0, 0, 0.99) both;
+        animation: animate-fade-in 0.8s cubic-bezier(0.7, 0, 0, 0.99) both;
+    }
+    h1 {
+        animation-delay: 0.25s;
+    }
+    h2 {
+        animation-delay: 0.5s;
+    }
+    .btn-circle {
+        animation-delay: 0.75s;
+    }
+}
+
+@keyframes animate-fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+}
+@-webkit-keyframes animate-fade-up {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(60px);
+    }
+}
+
+@keyframes animate-fade-in {
+    from {
+        opacity: 0
+    }
+}
+@-webkit-keyframes animate-fade-in {
+    from {
+        opacity: 0
+    }
+}
+
+.transition-shadow (@animate-length: 0.8s) {
+    -webkit-transition: box-shadow @animate-length linear;
+       -moz-transition: box-shadow @animate-length linear;
+            transition: box-shadow @animate-length linear;
+}
+
+/*==========================================
     Theming and Coloring
 ==========================================*/
 
@@ -608,16 +670,10 @@ section#screenshots {
 }
 
 .shadow-hover () {
-    -webkit-box-shadow: 0 4px 8px  0 rgba(0, 0, 0, 0.26),
-                        0 4px 14px 0 rgba(0, 0, 0, 0.22);
-       -moz-box-shadow: 0 4px 8px  0 rgba(0, 0, 0, 0.26),
-                        0 4px 14px 0 rgba(0, 0, 0, 0.22);
-            box-shadow: 0 4px 8px  0 rgba(0, 0, 0, 0.26),
-                        0 4px 14px 0 rgba(0, 0, 0, 0.22);
-}
-
-.shadow-animate (@animate-length: 1s) {
-    -webkit-transition: box-shadow @animate-length linear;
-       -moz-transition: box-shadow @animate-length linear;
-            transition: box-shadow @animate-length linear;
+    -webkit-box-shadow: 0 4px 8px  0 rgba(0, 0, 0, 0.36),
+                        0 4px 14px 0 rgba(0, 0, 0, 0.32);
+       -moz-box-shadow: 0 4px 8px  0 rgba(0, 0, 0, 0.36),
+                        0 4px 14px 0 rgba(0, 0, 0, 0.32);
+            box-shadow: 0 4px 8px  0 rgba(0, 0, 0, 0.36),
+                        0 4px 14px 0 rgba(0, 0, 0, 0.32);
 }

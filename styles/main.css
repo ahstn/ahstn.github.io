@@ -43,6 +43,19 @@ html,
 body:after {
   overflow-x: hidden;
 }
+.btn,
+.btn-circle,
+.btn-circle-lrg {
+  transition: 200ms cubic-bezier(0.4, 0, 1, 1);
+}
+.btn:hover,
+.btn-circle:hover,
+.btn-circle-lrg:hover {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.36), 0 4px 14px 0 rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.36), 0 4px 14px 0 rgba(0, 0, 0, 0.32);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.36), 0 4px 14px 0 rgba(0, 0, 0, 0.32);
+  transform: translateY(-3px);
+}
 .btn {
   border: none;
   border-radius: 0.2rem;
@@ -483,6 +496,50 @@ section#screenshots [class^="col-"] .img:hover:after {
 }
 .bg-dark {
   background: none repeat scroll 0% 0% #202020;
+}
+/*==========================================
+    Animations
+==========================================*/
+#cover .card,
+#cover h1,
+#cover h2 {
+  -webkit-animation: animate-fade-up 0.8s cubic-bezier(0.7, 0, 0, 0.99) both;
+  animation: animate-fade-up 0.8s cubic-bezier(0.7, 0, 0, 0.99) both;
+}
+#cover .btn-circle {
+  -webkit-animation: animate-fade-in 0.8s cubic-bezier(0.7, 0, 0, 0.99) both;
+  animation: animate-fade-in 0.8s cubic-bezier(0.7, 0, 0, 0.99) both;
+}
+#cover h1 {
+  animation-delay: 0.25s;
+}
+#cover h2 {
+  animation-delay: 0.5s;
+}
+#cover .btn-circle {
+  animation-delay: 0.75s;
+}
+@keyframes animate-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+}
+@-webkit-keyframes animate-fade-up {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(60px);
+  }
+}
+@keyframes animate-fade-in {
+  from {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes animate-fade-in {
+  from {
+    opacity: 0;
+  }
 }
 /*==========================================
     Theming and Coloring

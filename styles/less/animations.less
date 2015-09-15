@@ -1,18 +1,52 @@
 /*==========================================
     Animations
 ==========================================*/
-@keyframes navbar-fixed-collapse {
-    100% { padding: 0; }
+#cover {
+    .card, h1, h2 {
+        -webkit-animation: animate-fade-up 0.8s cubic-bezier(0.7, 0, 0, 0.99) both;
+        animation: animate-fade-up 0.8s cubic-bezier(0.7, 0, 0, 0.99) both;
+    }
+    .btn-circle {
+        -webkit-animation: animate-fade-in 0.8s cubic-bezier(0.7, 0, 0, 0.99) both;
+        animation: animate-fade-in 0.8s cubic-bezier(0.7, 0, 0, 0.99) both;
+    }
+    h1 {
+        animation-delay: 0.25s;
+    }
+    h2 {
+        animation-delay: 0.5s;
+    }
+    .btn-circle {
+        animation-delay: 0.75s;
+    }
 }
 
-@-webkit-keyframes navbar-fixed-collapse {
-    100% { padding: 0;}
+@keyframes animate-fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+}
+@-webkit-keyframes animate-fade-up {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(60px);
+    }
 }
 
-@keyframes navbar-fixed-top {
-    100% { padding: 10px 0;  background: 0;}
+@keyframes animate-fade-in {
+    from {
+        opacity: 0
+    }
+}
+@-webkit-keyframes animate-fade-in {
+    from {
+        opacity: 0
+    }
 }
 
-@-webkit-keyframes navbar-fixed-top {
-    100% { padding: 10px 0;}
+.transition-shadow (@animate-length: 0.8s) {
+    -webkit-transition: box-shadow @animate-length linear;
+       -moz-transition: box-shadow @animate-length linear;
+            transition: box-shadow @animate-length linear;
 }

@@ -10,6 +10,22 @@
     Variables
 ==========================================*/
 
+/* REM Sizing
+0.35rem     5px  / 18
+0.55rem     10px / 18
+0.85rem     15px / 18
+1rem        18px / 18
+1.1rem      20px / 18
+1.65rem     30px / 18
+1.75rem     32px / 18
+2rem        36px / 18
+2.25rem     40px / 18
+2.8rem      50px / 18
+3.35rem     60px / 18
+3.6rem      65px / 18
+3.9rem      70px / 18
+4.2rem      75px / 18 */
+
 @primary: #2886f2;
 @primary-light: lighten(@primary, 15%);
 @primary-dark: darken(@primary, 5%);
@@ -51,6 +67,9 @@ html, body {
 
     -webkit-font-smoothing: antialiased !important;
 	text-rendering: optimizeLegibility !important;
+
+    @media (max-width: 992px) {
+    }
 }
 
 html, body:after {
@@ -59,34 +78,34 @@ html, body:after {
 
 .btn {
     border: none;
-    border-radius: 2px;
-    height: 36px;
-    line-height: 36px;
-    padding: 0 20px;
+    border-radius: 0.2rem;
+    height: 2rem;
+    line-height: 2rem;
+    padding: 0 1.1rem;
     text-transform: uppercase;
 }
 
 .btn-circle, .btn-circle-lrg {
     border: none;
     border-radius: 100%;
-    height: 50px;
-    margin-top: 10px;
-    width: 50px;
+    height: 2.8rem;
+    margin-top: 0.55rem;
+    width: 2.8rem;
 
     span.glyphicon {
-        line-height: 45px;
+        line-height: 2.5rem;
     }
 }
 
 .btn-circle-lrg {
-    height: 75px;
-    width: 75px;
+    height: 4.2rem;
+    width: 4.2rem;
 
     span.glyphicon {
-        font-size: 32px;
+        font-size: 1.75rem;
     }
     i.fa {
-        font-size: 32px;
+        font-size: 1.75rem;
     }
 }
 
@@ -112,17 +131,17 @@ html, body:after {
 
 .card {
     background-color: #FFF;
-    border-radius: 5px;
+    border-radius: 0.35rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     height: 100%;
 
     @media (max-width: 992px) {
-        margin: 10px 0;
+        margin: 0.55rem 0;
     }
 
     img {
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
+        border-top-left-radius: 0.35rem;
+        border-top-right-radius: 0.35rem;
         width: 100%;
     }
 
@@ -135,18 +154,18 @@ html, body:after {
     }
 
     .card-heading {
-        padding: 7px 10px;
+        padding: 0.55rem 1rem;
         a.title {
             color: #212121;
             display: block;
-            font-size: 20px;
+            font-size: 1.1rem;
             overflow: hidden;
             position: relative;
             white-space: nowrap;
         }
         p.subtitle {
             color: #616161;
-            font-size: 15px;
+            font-size: 0.85rem;
         }
         .title-wrap {
             background-image: -webkit-gradient(linear,left top,right top,
@@ -163,7 +182,7 @@ html, body:after {
             height: 100%;
             position: absolute;
             right: 0;
-            width: 30px;
+            width: 1.65rem;
         }
     }
 }
@@ -172,7 +191,7 @@ html, body:after {
 ==========================================*/
 nav {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.11em;
     text-transform: uppercase;
 
     a {
@@ -181,7 +200,7 @@ nav {
 
     .navbar-nav {
         li a {
-            padding: 20px 15px;
+            padding: 1.11rem 0.83rem;
         }
         li a:hover {
             color: white;
@@ -191,33 +210,32 @@ nav {
 
     .navbar-brand {
         background: url("../images/logo.png") no-repeat 0 50%;
-        background-size: 80px;
-        margin: 5px 0;
-        width: 80px;
+        background-size: 4.4rem;
+        margin: 0.28rem 0.25rem;
+        width: 4.45em;
     }
 
     .navbar-toggle {
         color: white;
         float: left;
-        margin: 5px 15px;
+        margin: 0.27rem 0.83rem;
     }
 
     .navbar-title {
         color: white;
-        margin: 10px 20px;
-        width: 200px;
+        margin: 0.55rem;
         display: inline-block;
         @media(min-width: 992px) {
             display: none;
         }
 
         h1 {
-            font-size: 20px;
+            font-size: 1.11rem;
             margin: 0;
             text-transform: capitalize;
         }
         h2 {
-            font-size: 15px;
+            font-size: 0.83rem;
             margin: 0;
             opacity: 0.8;
             text-transform: uppercase;
@@ -226,6 +244,7 @@ nav {
 
     &.navbar-fixed-collapse {
         background-color: @primary-tolopea;
+        // TODO: BOX SHADOW MIXIN ( PX TO EM )
         box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
                     0 2px 10px 0 rgba(0, 0, 0, 0.12);
     }
@@ -238,7 +257,7 @@ nav {
 }
 nav {           // Mobile Slide out Navigation Drawer
     @media(max-width: 992px){
-        padding: 7px 0;
+        padding: 0.38rem 0;
         background-color: @primary-tolopea;
 
         .navbar-collapse.navbar-right {
@@ -252,28 +271,28 @@ nav {           // Mobile Slide out Navigation Drawer
             max-height: 100vh;
             padding: 0;
             position: absolute;
-            top: 74px;
-            width: 500px;
+            top: 4.11rem;
+            width: 27.77rem;
 
             .navbar-nav {
-                margin: 7.5px 0;
+                margin: 0.4rem 0;
             }
             .img-header {
                 background: url("../images/3840x2160.jpg") repeat scroll center center transparent;
                 background-size: cover;
                 color: @text-white;
-                height: 220px;
-                padding: 25px;
+                height: 12rem;
+                padding: 1.4rem;
                 text-transform: capitalize;
                 width: 100%;
 
                 h1 {
-                    font-size: 30px;
+                    font-size: 1.65rem;
                     font-weight: 500;
                     margin-top: 25px;
                 }
                 h2 {
-                    font-size: 22px;
+                    font-size: 1.2rem;
                     font-weight: 400;
                     margin: 0;
                 }
@@ -283,13 +302,13 @@ nav {           // Mobile Slide out Navigation Drawer
             }
             ul li a {
                 color: @text-black;
-                font-size: 30px;
+                font-size: 1.65rem;
                 text-transform: none;
 
                 i {
                     color: @text-grey;
-                    padding-left: 20px;
-                    padding-right: 60px;
+                    padding-left: 1.1rem;
+                    padding-right: 3.35rem;
                 }
 
                 &:hover {
@@ -306,8 +325,12 @@ nav {           // Mobile Slide out Navigation Drawer
             padding: 0;
             margin: 0;
         }
+        .navbar-brand {
+            display: none;
+        }
         .navbar-header {
             float: none;
+            margin: 0!important;
         }
         .navbar-toggle {
             display: block;
@@ -357,40 +380,49 @@ nav {           // Mobile Slide out Navigation Drawer
     color: white;
     display: table-cell;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.1rem;
     text-align: center;
     vertical-align: middle;
 
     h1 {
-        font-size: 65px;
+        font-size: 3.6rem;
         text-transform: uppercase;
+    }
+    h2 {
+        font-size: 2.4rem;
+        font-weight: 300;
     }
     .card img {
         border-radius: 5px;
-        margin: 57.25px 0;
-        padding: 10px 20px;
+        margin: 3.35rem 0;
+        padding: 0.55rem 1.1rem;
+    }
+
+    @media (max-width: 992px) {
+        h1 {
+            font-size: 2.4rem;
+        }
+        h2 {
+            font-size: 1.4rem;
+        }
+        .card img {
+            margin: 2.35rem 0;
+        }
     }
 }
 
 section {
-    font-size: 18px;
-    padding: 40px 30px;
+    font-size: 1rem;
+    padding: 2.25em 1.65rem;
 
     .row.cards {
-        padding: 30px 0;
+        padding: 1.65rem 0;
     }
 }
 
 section#about {
-    padding: 70px 30px;
-}
-
-@media (max-width: 768px) {
-    .screens img {
-        max-width: 100%;
-        margin: 20px auto;
-        float: none;
-    }
+    // TODO: FIX SIZING ON MOBILE
+    padding: 3.9rem 1.65rem;
 }
 
 /*==========================================
@@ -398,7 +430,7 @@ section#about {
 ==========================================*/
 footer {
     font-weight: 500;
-    padding: 30px 0;
+    padding: 1.65rem 0;
 }
 
 /*==========================================
@@ -409,41 +441,43 @@ footer {
     background-color: @primary-tolopea-lighter;
     color: @text-white;
     font-family: "Roboto", sans-serif;
-    font-size: 42px;
-    margin-top: 60px;
-    padding: 30px 0;
+    font-size: 2.3rem;
+    margin-top: 3.35rem;
+    padding: 1.65rem 0;
 
     h1, h2 {
-        margin: 10px 0;
+        margin: 0.55rem 0;
     }
     h2 {
-        font-weight: 400;
+        font-size: 1.4rem;
+        font-weight: 300;
     }
 }
 
 aside {
-    padding: 40px 0;
+    padding: 2.25rem 0;
 }
 
 section#overview {
     h1 {
-        margin: 20px 0;
+        margin: 1.1rem 0;
     }
     .container.overview {
-        min-height: 580px;
-        @media(min-width: 768px) {
-            min-height: 530px
-        }
-        @media(min-width: 1200px) {
-            min-height: 350px;
-        }
+        min-height: 20rem;
+
         .screens {
             img {
                 .shadow();
                 position: absolute;
-                width: 600px;
-                border-radius: 2px;
-                border: 10px solid white;
+                width: 33.5rem;
+                border-radius: 0.2rem;
+                border: 0.55rem solid white;
+            }
+        }
+
+        @media(max-width: 768px) {
+            .screens {
+                display: none;
             }
         }
     }
@@ -453,17 +487,17 @@ section#screenshots {
     background-color: @bg-darker;
 
     h1 {
-        margin: 20px 0;
+        margin: 1.1rem 0;
     }
 
     [class*="col-"], [class^="col-"] {
-        margin: 10px 0;
+        margin: 0.55rem 0;
         img {
             width: 100%;
         }
         .img {
             .shadow();
-            border: 4px solid white;
+            border: 0.25rem solid white;
             border-radius: 2px;
         }
         .img:hover:after  {
@@ -471,11 +505,11 @@ section#screenshots {
             border-radius: 4px;
             color: @text-black;
             content: attr(data-tooltip)!important;
-            padding: 5px 15px;
+            padding: 0.35rem 0.85rem;
             position: absolute;
             z-index: 999;
             left: 1.6em;
-            bottom: .75em;
+            bottom: 0.75em;
         }
     }
 }

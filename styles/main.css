@@ -220,15 +220,16 @@ nav.navbar-custom {
     border: none;
     color: #212121;
     background-color: white;
-    box-shadow: 500px 0px 0px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 200px 0px 0px 0px rgba(0, 0, 0, 0.5);
     font-weight: 400;
     height: 100vh!important;
     left: 0;
     max-height: 100vh;
+    margin: 0;
     padding: 0;
     position: absolute;
-    top: 4.11rem;
-    width: 27.77rem;
+    top: 4.02rem;
+    width: 80%;
   }
   nav .navbar-collapse.navbar-right .navbar-nav {
     margin: 0.4rem 0;
@@ -248,7 +249,7 @@ nav.navbar-custom {
     margin-top: 25px;
   }
   nav .navbar-collapse.navbar-right .img-header h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 400;
     margin: 0;
   }
@@ -257,13 +258,13 @@ nav.navbar-custom {
   }
   nav .navbar-collapse.navbar-right ul li a {
     color: #212121;
-    font-size: 1.65rem;
+    font-size: 1.15rem;
     text-transform: none;
   }
   nav .navbar-collapse.navbar-right ul li a i {
     color: #616161;
-    padding-left: 1.1rem;
-    padding-right: 3.35rem;
+    padding-left: 0.65rem;
+    padding-right: 2.35rem;
   }
   nav .navbar-collapse.navbar-right ul li a:hover {
     background-color: rgba(0, 0, 0, 0.1);

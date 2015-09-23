@@ -367,21 +367,27 @@ footer {
 /*==========================================
     Content Pages
 ==========================================*/
-#page-header {
+#page-header,
+#page-header-tabbed {
   background-color: #372d58;
   color: white;
   font-family: "Roboto", sans-serif;
-  font-size: 2.3rem;
   margin-top: 3.35rem;
   padding: 1.65rem 0;
 }
 #page-header h1,
-#page-header h2 {
+#page-header-tabbed h1,
+#page-header h2,
+#page-header-tabbed h2 {
   margin: 0.55rem 0;
 }
-#page-header h2 {
+#page-header h2,
+#page-header-tabbed h2 {
   font-size: 1.4rem;
   font-weight: 300;
+}
+#page-header-tabbed {
+  padding: 0;
 }
 aside {
   padding: 2.25rem 0;
@@ -440,6 +446,9 @@ section#screenshots [class^="col-"] .img:hover:after {
   left: 1.6em;
   bottom: 0.75em;
 }
+section .item-grid {
+  min-height: 470px;
+}
 #photo-box {
   padding: 0;
 }
@@ -480,6 +489,33 @@ section#screenshots [class^="col-"] .img:hover:after {
 #photo-box .no-spacing > [class*="col-"] {
   padding: 0;
   margin: 0;
+}
+/*******************************************************************************
+ ~> Tabs */
+ul.tabs {
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+ul.tabs li {
+  padding: 1.2em 0 0.5em;
+}
+ul.tabs li a {
+  color: white;
+  text-decoration: none;
+}
+ul.tabs li.columns {
+  margin: 0;
+}
+ul.tabs li.two.columns {
+  width: 16.6666%;
+}
+ul.tabs li.active {
+  border-bottom: inset 3px #f29428;
 }
 /*==========================================
     Shortcut / Helper Classes
@@ -566,6 +602,38 @@ section.animate-in .row.cards [class^="col-"]:nth-child(7) {
 section.animate-in .row.cards [class*="col-"]:nth-child(8),
 section.animate-in .row.cards [class^="col-"]:nth-child(8) {
   animation-delay: 1.05s !important;
+}
+section.animate-in .row.cards .item-grid [class*="col-"]:nth-child(1),
+section.animate-in .row.cards [class^="col-"]:nth-child(1) {
+  animation-delay: 0.05s !important;
+}
+section.animate-in .row.cards .item-grid [class*="col-"]:nth-child(2),
+section.animate-in .row.cards [class^="col-"]:nth-child(2) {
+  animation-delay: 0.1s !important;
+}
+section.animate-in .row.cards .item-grid [class*="col-"]:nth-child(3),
+section.animate-in .row.cards [class^="col-"]:nth-child(3) {
+  animation-delay: 0.15s !important;
+}
+section.animate-in .row.cards .item-grid [class*="col-"]:nth-child(4),
+section.animate-in .row.cards [class^="col-"]:nth-child(4) {
+  animation-delay: 0.2s !important;
+}
+section.animate-in .row.cards .item-grid [class*="col-"]:nth-child(5),
+section.animate-in .row.cards [class^="col-"]:nth-child(5) {
+  animation-delay: 0.25s !important;
+}
+section.animate-in .row.cards .item-grid [class*="col-"]:nth-child(6),
+section.animate-in .row.cards [class^="col-"]:nth-child(6) {
+  animation-delay: 0.3s !important;
+}
+section.animate-in .row.cards .item-grid [class*="col-"]:nth-child(7),
+section.animate-in .row.cards [class^="col-"]:nth-child(7) {
+  animation-delay: 0.35s !important;
+}
+section.animate-in .row.cards .item-grid [class*="col-"]:nth-child(8),
+section.animate-in .row.cards [class^="col-"]:nth-child(8) {
+  animation-delay: 0.4s !important;
 }
 section.animate-in .row.screenshots [class*="col-"]:nth-child(1),
 section.animate-in .row.cards [class^="col-"]:nth-child(1) {

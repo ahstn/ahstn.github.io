@@ -2,11 +2,10 @@
     Content Pages
 ==========================================*/
 
-#page-header {
+#page-header, #page-header-tabbed {
     background-color: @primary-tolopea-lighter;
     color: @text-white;
     font-family: "Roboto", sans-serif;
-    font-size: 2.3rem;
     margin-top: 3.35rem;
     padding: 1.65rem 0;
 
@@ -17,6 +16,10 @@
         font-size: 1.4rem;
         font-weight: 300;
     }
+}
+
+#page-header-tabbed {
+    padding: 0;
 }
 
 aside {
@@ -76,6 +79,11 @@ section#screenshots {
             left: 1.6em;
             bottom: 0.75em;
         }
+    }
+}
+section {
+    .item-grid {
+        min-height: 470px;
     }
 }
 

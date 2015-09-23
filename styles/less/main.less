@@ -438,11 +438,10 @@ footer {
     Content Pages
 ==========================================*/
 
-#page-header {
+#page-header, #page-header-tabbed {
     background-color: @primary-tolopea-lighter;
     color: @text-white;
     font-family: "Roboto", sans-serif;
-    font-size: 2.3rem;
     margin-top: 3.35rem;
     padding: 1.65rem 0;
 
@@ -453,6 +452,10 @@ footer {
         font-size: 1.4rem;
         font-weight: 300;
     }
+}
+
+#page-header-tabbed {
+    padding: 0;
 }
 
 aside {
@@ -514,6 +517,11 @@ section#screenshots {
         }
     }
 }
+section {
+    .item-grid {
+        min-height: 470px;
+    }
+}
 
 #photo-box {
     padding: 0;
@@ -560,6 +568,39 @@ section#screenshots {
         padding: 0;
         margin: 0;
     }
+}
+
+/*******************************************************************************
+ ~> Tabs */
+ul.tabs {
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    li {
+        padding: 1.2em 0 0.5em;
+        a {
+            color: @text-white;
+            text-decoration: none;
+        }
+    }
+    li.columns {
+        margin: 0;
+    }
+    li.two.columns {
+        width: 16.6666%;
+    }
+    li.active {
+        border-bottom: inset 3px @secondary;
+    }
+}
+
+// Use for filtering content with tabs
+.item-grid {
+
 }
 
 /*==========================================
@@ -621,6 +662,9 @@ section.animate-in {
     }
     .row.cards [class*="col-"], .row.cards [class^="col-"] {
         .transition-cascade-delay(0.1s, 0.25s);
+    }
+    .row.cards .item-grid [class*="col-"], .row.cards [class^="col-"] {
+        .transition-cascade-delay(0.05s, 0s);
     }
     .row.screenshots [class*="col-"], .row.cards [class^="col-"] {
         .transition-cascade-delay(0.1s, 0.25s);

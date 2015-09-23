@@ -26,4 +26,25 @@ $(document).ready(function(){
     $('.navbar-collapse ul li a').click(function() {
         $('.navbar-toggle:visible').click();
     });
+
+    // Tab filtering
+    $('#page-header-tabbed li a').click(function() {
+        var clickedClass = $(this).attr('data-filter');
+        console.log('clicked ' + clickedClass);
+
+        // Remove the active class from all tabs, and add it to the clicked tab
+        $('#page-header-tabbed li').removeClass('active');
+        $(this).parent().addClass('active');
+
+        $('.item-grid').children('div').hide();
+
+        if (clickedClass == 'all') {
+            $('.item-grid').children('div').hide();
+            $('.item-grid').children('div').show();
+        }
+        else {
+            $('.item-grid').children('div[data-filter!=' + clickedClass + ']').hide();
+            $('.item-grid').children('div[data-filter=' + clickedClass +']').show();
+        }
+    });
 });

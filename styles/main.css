@@ -132,6 +132,8 @@ body:after {
 .card .card-heading p.subtitle {
   color: #616161;
   font-size: 0.85rem;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .card .card-heading .title-wrap {
   background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, #ffffff));
@@ -448,6 +450,10 @@ section#screenshots [class^="col-"] .img:hover:after {
 }
 section .item-grid {
   min-height: 470px;
+}
+section .item-grid [class*="col-"],
+section .item-grid [class^="col-"] {
+  margin-bottom: 1rem;
 }
 #photo-box {
   padding: 0;

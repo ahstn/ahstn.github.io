@@ -166,6 +166,8 @@ html, body:after {
         p.subtitle {
             color: #616161;
             font-size: 0.85rem;
+            overflow: hidden;
+            white-space: nowrap;
         }
         .title-wrap {
             background-image: -webkit-gradient(linear,left top,right top,
@@ -520,6 +522,10 @@ section#screenshots {
 section {
     .item-grid {
         min-height: 470px;
+        
+        [class*="col-"], [class^="col-"] {
+            margin-bottom: 1rem;
+        }
     }
 }
 

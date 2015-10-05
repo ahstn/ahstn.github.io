@@ -366,6 +366,12 @@ footer {
   font-weight: 500;
   padding: 1.65rem 0;
 }
+footer ul.list-inline li a {
+  color: white;
+}
+footer ul.list-inline li a:hover {
+  color: white;
+}
 /*==========================================
     Content Pages
 ==========================================*/

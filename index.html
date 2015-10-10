@@ -162,7 +162,7 @@
     <div class="row text-center">
       <a class="btn btn-crimson" href="pages/work.html">View All</a>
     </div>
-  </section>
+  </section><!-- /.Projects -->
 
   <section>
     <div class="row">
@@ -180,7 +180,8 @@
         <div class="col-md-11 col-md-offset-1">
           <div class="col-lg-3 col-sm-12 col-md-offset-1">
             <div class="card">
-              <a class="card-target" href="pages/genesis.html"></a>
+              <a class="card-target" href="pages/genesis.html" 
+                data-toggle="modal" data-target="#myModal"></a>
               <div class="card-image">
                 <img src="images/icons/icoEducation.png" alt="" />
               </div>
@@ -195,7 +196,8 @@
           </div>
           <div class="col-lg-3 col-sm-12">
             <div class="card">
-              <a class="card-target" href="#work"></a>
+              <a class="card-target" href="#work"
+               data-toggle="modal" data-target="#myModal"></a>
               <div class="card-image">
                 <img src="images/icons/icoEducation.png" alt="" />
               </div>
@@ -210,7 +212,8 @@
           </div>
           <div class="col-lg-3 col-sm-12">
             <div class="card">
-              <a class="card-target" href="#work"></a>
+              <a class="card-target" href="#work"
+                data-toggle="modal" data-target="#myModal"></a>
               <div class="card-image">
                 <img src="images/icons/icoEducation.png" alt="" />
               </div>
@@ -229,7 +232,7 @@
     <div class="row text-center">
       <a class="btn btn-crimson" href="#">Download Resume</a>
     </div>
-  </section>
+  </section><!-- /.Education -->
 
   <section id="about" class="section-crimson">
     <div class="container">
@@ -271,7 +274,122 @@
         </div>
       </div>
     </div>
-  </section>
+  </section><!-- /.About -->
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Education</h4>
+        </div>
+        <div class="modal-body">
+          <ul class="nav nav-tabs" role="tablist" id="myTabs">
+            <li role="presentation" class="">
+              <a href="#LGS" role="tab" data-toggle="tab">LGS</a>
+            </li>
+            <li role="presentation" class="">
+              <a href="#NWRC" role="tab" data-toggle="tab">NWRC</a>
+            </li>
+            <li role="presentation" class="active">
+              <a href="#QUB" role="tab" data-toggle="tab">QUB</a>
+            </li>
+          </ul>
+
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane" id="LGS">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Title</th>
+                    <th>Grade</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="active text-center">
+                    <td colspan="2">A-Levels</td>
+                  </tr>
+                  <tr>
+                    <td>Computing</td>
+                    <td>C</td>
+                  </tr>
+                  <tr>
+                    <td>Engineering</td>
+                    <td>C</td>
+                  </tr>
+                  <tr>
+                    <td>Maths</td>
+                    <td>C</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="NWRC">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Module Title</th>
+                    <th>Result</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="active text-center">
+                    <td colspan="2">Year 2</td>
+                  </tr>
+                  <tr>
+                    <td>Computing</td>
+                    <td>C</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div role="tabpanel" class="tab-pane active" id="QUB">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Module Title</th>
+                    <th>Result</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="active text-center">
+                    <td colspan="2">Semester 1</td>
+                  </tr>
+                  <tr>
+                    <td>Advanced Programming using Android &amp; C++</td>
+                    <td>TBD</td>
+                  </tr>
+                  <tr>
+                    <td>Networks &amp; Communications</td>
+                    <td>TBD</td>
+                  </tr>
+                  <tr>
+                    <td>Database Systems</td>
+                    <td>TBD</td>
+                  </tr>
+                  <tr>
+                    <td>Professional Computing Practices</td>
+                    <td>TBD</td>
+                  </tr>
+                  <tr class="active text-center">
+                    <td colspan="2">Semester 2</td>
+                  </tr>
+                  <tr>
+                    <td>Data Structures &amp; Algorithms</td>
+                    <td>TBD</td>
+                  </tr>
+                  <tr>
+                    <td>Software Engineering &amp; Group Project</td>
+                    <td>TBD</td>
+                  </tr>
+              </table>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div><!-- /.modal -->
 
   <footer class="bg-dark">
     <div class="container text-center text-white">

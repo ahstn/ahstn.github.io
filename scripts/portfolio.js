@@ -27,6 +27,17 @@ $(document).ready(function(){
         $('.navbar-toggle:visible').click();
     });
 
+    // Modal click event for Education items
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').focus()
+    })
+
+    // Tabs click event
+    $('#myTabs a').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+    })
+
     // Tab filtering
     $('#page-header-tabbed li a').click(function() {
         var clickedClass = $(this).attr('data-filter');

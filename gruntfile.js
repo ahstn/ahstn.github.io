@@ -1,8 +1,4 @@
 module.exports = function (grunt) {
-
-    //require('time-grunt')(grunt); // output up time
-    //require('load-grunt-tasks')(grunt); // load all tasks
-
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         concat: {
@@ -88,6 +84,15 @@ module.exports = function (grunt) {
                 ],
             },
         },
+        browserSync: {
+            bsFiles: { src: 'styles/*.css' },
+            options: {
+                watchTask: true,
+                server: {
+                    baseDir: './'
+                }
+            }
+        },
         watch: {
             styles: {
                 files: ['styles/less/*.less'],
@@ -103,6 +108,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-browser-sync');
     grunt.registerTask('build', ['concat', 'less']);
-    grunt.registerTask('default', ['concat', 'less', 'copy', 'watch']);
+    grunt.registerTask('default', ['copy', 'browserSync', 'watch']);
 };
